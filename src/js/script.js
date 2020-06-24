@@ -1,10 +1,23 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
-        // adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true,
+                arrows: false
+              }
+            }
+          ],
         speed: 1100,
+        adaptiveHeight: true,
         prevArrow:'<button type="button" class="slick-prev"><img src="../icons/chevron-left-solid.png"></button> ',
-        nextArrow:'<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.png"></button>',
+        nextArrow:'<button type="button" class="slick-next"><img src="../icons/chevron-right-solid.png"></button>'
     });
+
     $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
         $(this)
           .addClass('catalog__tab_active').siblings().removeClass('catalog__tab_active')

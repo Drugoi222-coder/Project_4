@@ -1,4 +1,25 @@
-@media (max-width: 767px)
+@media (max-width: 992px)
+    .slick-dots
+        display: flex
+        list-style-type: none
+        justify-content: center
+        align-items: center
+        margin-top: 10px
+        padding-inline-start: 0
+        transition: 2s all
+        li
+            button
+                &:hover
+                    background-color: $main_color
+        button
+            font-size: 0
+            width: 30px
+            height: 20px
+            margin-left: 10px
+            border: none
+            border-radius: 5px
+
+@media (max-width: 768px)
     .promo
         background-position: 30% 70%
         &__header
@@ -8,8 +29,24 @@
     .advantages
         &__item
             width: 218px
+    .container
+        .carousel
+            &__inner
+                max-width: 100%
+                height: auto
+    .reviews
+        &__line
+            top: 290px !important
 
 @media (max-width: 575px)
+    .carousel
+            &__inner
+                img
+                    max-width: 100%
+                    height: auto
+    .catalog
+        &__tab
+            font-size: 14px !important
     .promo
         &__header
             font-size: 34px
@@ -29,7 +66,6 @@
             span
                 font-size: 17px
     .button
-        height: 25px
         &_main
             height: 40px
             font-size: 15px
@@ -42,6 +78,98 @@
         &__item
             span
                 font-size: 16px
+
+@media (max-width: 425px)
+    .header
+        &__official
+            display: none
+    .promo
+        &__icons
+            justify-content: flex-end
+            
+        &__header
+            font-size: 31px
+        &__subheader
+            font-size: 16px
+    .advantages
+        &__item
+            margin-top: 30px
+            span
+                margin-top: 20px
+                margin-bottom: 15px
+        &__wrapper
+            margin-top: 20px
+            flex-direction: column
+            align-items: center
+    .consultation
+        .subheader
+            &_left
+                font-size: 18px
+        &__descr
+            font-size: 19px !important
+            margin-top: 65px !important
+        .feed-form
+            width: auto
+            input
+                width: 100%
+    .carousel
+        &__inner
+            img
+                max-width: 100%
+                height: auto
+    .catalog
+        &__content
+            &_active
+                justify-content: center !important
+        &__tab
+            font-size: 11px !important
+    .reviews
+        &__item
+            img
+                height: 120px !important
+        &__text
+            margin-left: 20px !important
+        &__header
+            font-size: 16px !important
+        &__subheader
+            font-size: 13px !important
+        &__descr
+            font-size: 13px !important
+        &__wrapper
+            margin-top: 50px !important
+    .footer
+        &__info
+            padding: 30px 28px 30px 28px !important
+            width: 300px !important
+            height: 250px !important
+
+@media (max-width: 375px)
+    .promo
+        &__header
+            font-size: 26px
+        &__subheader
+            font-size: 13px
+    .consultation
+        .subheader_left
+            font-size: 16px
+        &__descr
+            font-size: 17px !important
+            margin-top: 50px !important
+    .catalog
+        &__tabs
+            flex-direction: column
+            margin-top: 20px !important
+        &__tab
+            font-size: 15px !important
+            margin-top: 20px !important
+    .reviews__line
+        top: 360px !important
+
+@media (max-width: 625px)
+    .catalog
+        &__content
+            &_active
+                justify-content: center !important
 
 @media (max-width: 320px)
     .header
@@ -83,3 +211,12 @@
     .button
         &_main
             width: 285px
+    .catalog
+        &__tabs
+            flex-direction: column
+            margin-top: 20px !important
+        &__tab
+            font-size: 15px !important
+            margin-top: 20px !important
+    .reviews__line
+        top: 455px !important

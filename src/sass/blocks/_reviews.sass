@@ -1,3 +1,39 @@
 .reviews
     min-height: 947px
     padding-bottom: 71px
+    &__wrapper
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+    &__item
+        position: relative
+        display: flex
+        margin-top: 100px
+        &:first-child
+            margin-top: 0
+        img
+            height: 169px
+    &__line
+        position: absolute
+        width: 100%
+        top: 250px
+        height: 1px
+        background-color: #f6f6f6
+
+    &__text
+        margin-left: 69px
+    &__header
+        font-size: 18px
+        font-weight: bold
+        text-align: left
+        color: #0d0d0d
+    &__subheader
+        font-size: 14px
+        font-weight: 300
+        text-align: left
+        color: #646464
+    &__descr
+        font-size: 16px
+        font-weight: 300
+        text-align: left
+        color: #0d0d0d
